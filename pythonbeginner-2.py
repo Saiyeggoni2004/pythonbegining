@@ -43,5 +43,12 @@ elif x=="i":
     print("i is vowel")
 else:
     print("s is consonent")
-
+..................USER INPUT..............................
+marks=int(input("enter marks"))
+if marks80>=marks90:
+    print("student secure A grade")
+elif 70>=80:
+    print("b grade")
+elif 50>70:
+    print("c grade")
 
