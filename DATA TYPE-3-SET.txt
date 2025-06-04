@@ -1,0 +1,21 @@
+Set
+
+If you want to represent a group. unique values as a single Entity then we should go for set.
+
+we can represent set Elements within curly braces with comma
+
+insertion order is not preserved. (hash. code-8)
+
+-Duplicates are not allowed
+
+indexing and slicing are not allowed for set because it has no order
+
+we can use add function()
+
+a.add()
+
+Heterogeneous Elements are allowed.
+
+Set objects are mutable.
+
+We can apply mathematical operations like union, Intersection,Etc... on set objects.
