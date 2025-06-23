@@ -1,0 +1,52 @@
+# 1. Simple variable and print
+full_name = 'kan'
+print(full_name)
+
+# Invalid: can't raise number to a string power; this line is commented
+# print(68**'s')  # Invalid
+
+# 2. Invalid operations - commented with explanation
+# print("sai" - "s")  # Error: unsupported operand type(s)
+# print(4**"s")        # Error: unsupported operand type(s)
+
+# 3. Comparison
+print(2 > 3)  # Output: False
+
+# 4. If-else comparison
+p1 = 20
+p2 = 30
+if p1 > p2:
+    print(f"{p1}")
+else:
+    print(f"{p2}")  # Output: 30
+
+# 5. Commented gibberish line
+# poiuytrewqsdfghm,.,mnbvcx  # Not valid code
+
+# 6. Grading logic - corrected
+marks = int(input("Enter marks: "))
+if marks >= 90:
+    print("Student secured A grade")
+elif marks >= 80:
+    print("Student secured B grade")
+elif marks >= 50:
+    print("Student secured C grade")
+else:
+    print("Student secured D grade or failed")
+
+# 7. Subarray sum logic (sliding window for minimal length with sum >= target)
+num = [2, 3, 1, 2, 4, 3]
+target = 8
+l = 0
+temp = 0
+ans = float("inf")
+n = len(num)
+
+for r in range(n):
+    temp += num[r]
+    while temp >= target:
+        ans = min(ans, r - l + 1)
+        temp -= num[l]
+        l += 1
+
+print(ans if ans != float("inf") else 0)  # Output: minimum subarray length or 0 if not found
